@@ -9,6 +9,7 @@ export interface SiteConfig {
     github?: string;
     linkedin?: string;
     email?: string;
+    x?: string;
     rss?: boolean;
   };
   homepage: PostFilter;
@@ -25,6 +26,8 @@ export const siteConfig: SiteConfig = {
     github: "https://github.com/git-kaneko", // leave empty if you don't want to show the github
     // linkedin: "https://www.linkedin.com/in/someone/", // leave empty if you don't want to show the linkedin
     // email: "example@gmail.com", // leave empty if you don't want to show the email
+    // TODO: ダークモード対応
+    x: "https://x.com/neko2g2",
     rss: true, // set this to false if you don't want to provide an rss feed
   },
   homepage: {
