@@ -1,28 +1,12 @@
 ---
 title: "Hello World"
-description: "Welcome to my blog! This is my first post."
-date: 2024-03-21
-tags: ["welcome", "first-post"]
+description: "初めての投稿"
+date: 2025-01-04
+tags: ["first-post"]
 ---
 
-Hello everyone! This is my first blog post. I'm excited to share my thoughts and experiences with you.
+こんにちは、こんばんは、初めまして。Neko.と申します。
 
-## What to Expect
+なにか発信したいと思い立ったので、ブログを作ってみました。
 
-In this blog, I'll be writing about:
-
-- Technology
-- Programming
-- Best practices
-- And much more!
-
-```javascript
-// Here's a simple example of code highlighting
-function greet(name) {
-  return `Hello, ${name}!`;
-}
-
-console.log(greet('World'));
-```
-
-Stay tuned for more content!
+某ブログサービスを使うのも楽でいいなと思ったのですが、一応エンジニアをしているのでせっかくなら自分でブログを作ろうと思ったのでAstroを使ってこのブログは作成しています。
