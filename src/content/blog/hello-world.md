@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 description: "初めての投稿"
-date: 2025-01-04
+date: 2026-01-04
 tags: ["first-post"]
 ---
 
