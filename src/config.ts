@@ -4,7 +4,7 @@ export interface SiteConfig {
   title: string;
   slogan: string;
   description?: string;
-  site: string,
+  site: string;
   social: {
     github?: string;
     linkedin?: string;
@@ -18,7 +18,7 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  site: "https://example.com/", // your site url
+  site: "https://blog.osakananeko.com/", // your site url
   title: "シンシログ",
   slogan: "A fresh page for everyday notes",
   description: "",
