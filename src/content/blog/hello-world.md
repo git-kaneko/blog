@@ -36,3 +36,5 @@ PHP/Laravelをメインで使っていますが、PHPはあまり好きではあ
 更新頻度はそこまで高くないと思いますし、誰が読んでくれるかもわからないですが、適当にやっていきます。
 
 よろしくお願いします。
+
+https://open.spotify.com/intl-ja/album/4NOT6Gz2SPAsLFkVH9wqk9

@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import rehypePrettyCode from 'rehype-pretty-code';
 import { siteConfig } from './src/config';
-import remarkLinkCard from './src/plugins/remark-link-card.mjs';
+import remarkLinkCard from './src/plugins/remark-link-card.ts';
 
 import sitemap from '@astrojs/sitemap';
 
