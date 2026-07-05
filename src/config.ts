@@ -5,6 +5,7 @@ export interface SiteConfig {
   slogan: string;
   description?: string;
   site: string;
+  timezone: string; // 記事の公開日を判定するタイムゾーン (IANA名, 例: "Asia/Tokyo")
   social: {
     github?: string;
     linkedin?: string;
@@ -19,6 +20,7 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   site: "https://blog.osakananeko.com/", // your site url
+  timezone: "Asia/Tokyo", // 記事の公開日時を判定する基準タイムゾーン
   title: "シンシログ",
   slogan: "A fresh page for everyday notes",
   description: "",
