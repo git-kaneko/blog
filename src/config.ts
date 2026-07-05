@@ -6,6 +6,7 @@ export interface SiteConfig {
   description?: string;
   site: string;
   timezone: string; // 記事の公開日を判定するタイムゾーン (IANA名, 例: "Asia/Tokyo")
+  ogImage?: string; // OGP画像のパス (public/ からの相対パス, 例: "/ogp.png")
   social: {
     github?: string;
     linkedin?: string;
@@ -21,6 +22,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   site: "https://blog.osakananeko.com/", // your site url
   timezone: "Asia/Tokyo", // 記事の公開日時を判定する基準タイムゾーン
+  ogImage: "/ogp.png", // 全ページ共通のOGP画像 (public/ogp.png を配置)
   title: "シンシログ",
   slogan: "A fresh page for everyday notes",
   description: "",

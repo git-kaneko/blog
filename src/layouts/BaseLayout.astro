@@ -11,6 +11,10 @@ interface Props {
 }
 
 const { title, description = 'A minimal blog focused on excellent reading experience' } = Astro.props
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const ogImageURL = new URL(siteConfig.ogImage ?? '/ogp.png', Astro.site)
+const xHandle = siteConfig.social.x?.replace(/^https?:\/\/(?:www\.)?x\.com\//, '@')
 ---
 
 <!doctype html>
@@ -21,7 +25,23 @@ const { title, description = 'A minimal blog focused on excellent reading experi
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    {/* Open Graph */}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteConfig.title} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImageURL} />
+
+    {/* Twitter */}
+    <meta name="twitter:card" content="summary_large_image" />
+    {xHandle && <meta name="twitter:site" content={xHandle} />}
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
     {siteConfig.googleAnalysis && <GoogleAnalytics id={siteConfig.googleAnalysis} />}
     <ClientRouter />
   </head>
